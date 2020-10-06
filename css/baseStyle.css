@@ -1,0 +1,309 @@
+@charset "utf-8";
+html, body{font-family:'GothamBook','ng';font-size:12px;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;}
+input, select,textarea {font-family:'GothamBook','ng';font-size:11px;-webkit-appearance:none;border-radius:0;-webkit-border-radius:0;}
+select {padding-left:5px;box-sizing:border-box;box-sizing:-webkit-border-box;-moz-box-sizing:border-box;background:url(../../images/common/bg_selectbox.png) right 50% no-repeat;background-size:cover;}
+select.read {background:url(../../images/common/icon_select_gray.png) right 50% no-repeat #f7f7f7;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+body {-webkit-text-size-adjust:100%}
+ol, ul{list-style:none}
+strong, em{font-weight:normal;font-style:normal;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;font-style:normal;letter-spacing:1px;}
+h1.ng, h2.ng, h3.ng, h4.ng, h5.ng, h6.ng {font-weight:700;letter-spacing:0;}
+h1.ngb, h2.ngb, h3.ngb, h4.ngb, h5.ngb, h6.ngb {font-weight:700;letter-spacing:0;}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+
+/* 테이블 스타일 초기화 */
+table{border-collapse:collapse;border-spacing:0;table-layout:fixed;}
+td {word-wrap:break-word;word-break:keep-all}
+div, li {word-wrap:break-word;word-break:keep-all }
+
+/* 링크 */
+a:link{text-decoration:none;color:inherit}
+a:visited{text-decoration:none;color:inherit}
+a:active{text-decoration:none;color:inherit}
+a:hover{text-decoration:none;color:inherit}
+
+/* 20200611 추가 : display */
+.show, .block {display:block;}
+.hide {display:none;}
+.i_block {display:inline-block;}
+
+/* 이미지, 폼관련 요소 */
+/*img{-webkit-perspective:1}*/
+img{vertical-align:top}
+label, select, input, textarea{vertical-align:top;background-color:transparent}
+
+textarea::-webkit-scrollbar, 
+.pop_rule_box::-webkit-scrollbar,
+.pop_free_box::-webkit-scrollbar {
+     width:20px;
+	 height:20px;
+	 border-left:solid 1px #ccc;
+}
+
+textarea::-webkit-scrollbar-button:start:decrement, 
+.pop_rule_box::-webkit-scrollbar-button:start:decrement,
+.pop_free_box::-webkit-scrollbar-button:start:decrement {
+	width: 20px;height:20px;
+	display: block;
+	background: url('../../images/common/icon_scroll_up.png') #fff;background-size:19px 19px;
+	 border-left:solid 1px #ccc;
+}
+
+textarea::-webkit-scrollbar-button:end:increment, 
+.pop_rule_box::-webkit-scrollbar-button:end:increment,
+.pop_free_box::-webkit-scrollbar-button:end:increment  {
+	width: 20px;height:20px;
+	display: block;
+	background: url('../../images/common/icon_scroll_down.png') #fff;background-size:19px 19px;
+	 border-left:solid 1px #ccc;
+}
+textarea::-webkit-scrollbar-track-piece,
+.pop_rule_box::-webkit-scrollbar-track-piece,
+.pop_free_box::-webkit-scrollbar-track-piece {
+	background-color: rgba(171, 171, 171, 0);
+	width: 20px;
+	 border-left:solid 1px #ccc;
+ 
+}
+
+textarea::-webkit-scrollbar-thumb:vertical,
+textarea::-webkit-scrollbar-thumb:horizontal ,
+.pop_rule_box::-webkit-scrollbar-thumb:vertical,
+.pop_rule_box::-webkit-scrollbar-thumb:horizontal,
+.pop_free_box::-webkit-scrollbar-thumb:vertical,
+.pop_free_box::-webkit-scrollbar-thumb:horizontal {
+	height: 0;
+	background-color:rgba(171, 171, 171, 1);
+}
+
+* {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+*:focus { outline:none; }
+
+/* 20200414 추가 */
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 740px) {
+  html {
+    font-size: 23.68px;
+  }
+}
+@media screen and (max-width: 730px) {
+  html {
+    font-size: 23.35px;
+  }
+}
+@media screen and (max-width: 720px) {
+  html {
+    font-size: 23.03px;
+  }
+}
+@media screen and (max-width: 710px) {
+  html {
+    font-size: 22.71px;
+  }
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 22.38px;
+  }
+}
+@media screen and (max-width: 690px) {
+  html {
+    font-size: 22.06px;
+  }
+}
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 21.74px;
+  }
+}
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 21.41px;
+  }
+}
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 21.09px;
+  }
+}
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 20.77px;
+  }
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 20.44px;
+  }
+}
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 20.12px;
+  }
+}
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 19.79px;
+  }
+}
+@media screen and (max-width: 610px) {
+  html {
+    font-size: 19.47px;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 19.15px;
+  }
+}
+@media screen and (max-width: 590px) {
+  html {
+    font-size: 18.82px;
+  }
+}
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 18.50px;
+  }
+}
+@media screen and (max-width: 570px) {
+  html {
+    font-size: 18.19px;
+  }
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 17.86px;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 17.55px;
+  }
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 17.23px;
+  }
+}
+@media screen and (max-width: 530px) {
+  html {
+    font-size: 16.91px;
+  }
+}
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 16.59px;
+  }
+}
+@media screen and (max-width: 510px) {
+  html {
+    font-size: 16.27px;
+  }
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 15.95px;
+  }
+}
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 15.64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 15.31px;
+  }
+}
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 14.68px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14.36px;
+  }
+}
+@media screen and (max-width: 440px) {
+  html {
+    font-size: 14.04px;
+  }
+}
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 13.73px;
+  }
+}
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 13.40px;
+  }
+}
+@media screen and (max-width: 410px) {
+  html {
+    font-size: 13.09px;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 12.77px;
+  }
+}
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 12.45px;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 12.13px;
+  }
+}
+@media screen and (max-width: 370px) {
+  html {
+    font-size: 11.81px;
+  }
+}
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 11.49px;
+  }
+}
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 11.18px;
+  }
+}
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 10.85px;
+  }
+}
+@media screen and (max-width: 330px) {
+  html {
+    font-size: 10.54px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10.22px;
+  }
+}
